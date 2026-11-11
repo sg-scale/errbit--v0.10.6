@@ -358,7 +358,7 @@ GEM
     orm_adapter (0.5.0)
     ostruct (0.6.1)
     parallel (1.27.0)
-    parser (3.3.8.0)
+    parser (3.3.13.0)
       ast (~> 2.4.1)
       racc
     patience_diff (1.2.0)
@@ -373,7 +373,15 @@ GEM
       css_parser (>= 1.19.0)
       htmlentities (>= 4.0.0)
     prettyprint (0.2.0)
-    prism (1.4.0)
+    prism (2.1.0)
+    prism (2.1.0-aarch64-linux-gnu)
+    prism (2.1.0-aarch64-linux-musl)
+    prism (2.1.0-arm-linux-gnu)
+    prism (2.1.0-arm-linux-musl)
+    prism (2.1.0-arm64-darwin)
+    prism (2.1.0-x86_64-darwin)
+    prism (2.1.0-x86_64-linux-gnu)
+    prism (2.1.0-x86_64-linux-musl)
     pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -508,9 +516,9 @@ GEM
       rubocop-ast (>= 1.44.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.44.1)
+    rubocop-ast (1.51.0)
       parser (>= 3.3.7.2)
-      prism (~> 1.4)
+      prism (>= 1.7)
     rubocop-capybara (2.22.1)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
@@ -878,13 +886,21 @@ CHECKSUMS
   orm_adapter (0.5.0) sha256=aa5d0be5d540cbb46d3a93e88061f4ece6a25f6e97d6a47122beb84fe595e9b9
   ostruct (0.6.1) sha256=09a3fb7ecc1fa4039f25418cc05ae9c82bd520472c5c6a6f515f03e4988cb817
   parallel (1.27.0) sha256=4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130
-  parser (3.3.8.0) sha256=2476364142b307fa5a1b1ece44f260728be23858a9c71078e956131a75453c45
+  parser (3.3.13.0) sha256=e02f9b63c2fe05b0c68f692ba4df89b3cb113b663964f75d988fbebfd6c3deca
   patience_diff (1.2.0) sha256=f492094486af02fff4a80070fa6b4d0ebbcf4d42fb38bba29d095eef43f6822c
   pjax_rails (0.5.1) sha256=3cb4b53d874de1349014aaae2cb879c8924ec86d68f3054a0d958c995b0c8ddb
   pp (0.6.2) sha256=947ec3120c6f92195f8ee8aa25a7b2c5297bb106d83b41baa02983686577b6ff
   premailer (1.27.0) sha256=0fe2348cd82738855c482b31c915a06ecb1d3ad004578c19042905196ddbd1e7
   prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
-  prism (1.4.0) sha256=dc0e3e00e93160213dc2a65519d9002a4a1e7b962db57d444cf1a71565bb703e
+  prism (2.1.0) sha256=1c0a7c6dea0e93183390fb123f007564dbe663198e2f86ad87204151147601f3
+  prism (2.1.0-aarch64-linux-gnu) sha256=808dddc72def68e1a0463689414c97e0ba211938eddbab05387a4844aa2b3ec2
+  prism (2.1.0-aarch64-linux-musl) sha256=dd1a0732620c1e575dabb07a297a62911fabd72f8e20ce850b522a866f877930
+  prism (2.1.0-arm-linux-gnu) sha256=96b2426b9dbab05448c4add735619929042be3cd7e871ff186468121b62bcfa8
+  prism (2.1.0-arm-linux-musl) sha256=00ef918e42a3dc98f11a461bf473586a3424b0f78bee8a4e43b5a65a5f5e2cd0
+  prism (2.1.0-arm64-darwin) sha256=2d0c2e3e011cfd89c041940907d3ff3def379d7b0f2ba158d1d42238e8ad8afc
+  prism (2.1.0-x86_64-darwin) sha256=6c645d8e6afc742956c7518220ce5106367727c4d9980ac9ab386d55004ddab4
+  prism (2.1.0-x86_64-linux-gnu) sha256=b2b647afce09551e650b8bb3e2fc91d7d73d392a09534ca307ec0d619c33bfd4
+  prism (2.1.0-x86_64-linux-musl) sha256=249f45981726923e259b927902246219fa25ad10a76f43849c9aee1a3d3ec5b8
   pry (0.15.2) sha256=12d54b8640d3fa29c9211dd4ffb08f3fd8bf7a4fd9b5a73ce5b59c8709385b6b
   pry (0.15.2-java) sha256=855f3b57563bacac46d49f58ecc9650a3d7f798dffafbdf392ff1b26a3fa180c
   pry-rails (0.3.11) sha256=a69e28e24a34d75d1f60bcf241192a54253f8f7ef8a62cba1e75750a9653593d
@@ -927,7 +943,7 @@ CHECKSUMS
   rspec-rails (7.1.1) sha256=e15dccabed211e2fd92f21330c819adcbeb1591c1d66c580d8f2d8288557e331
   rspec-support (3.13.2) sha256=cea3a2463fd9b84b9dcc9685efd80ea701aa8f7b3decb3b3ce795ed67737dbec
   rubocop (1.75.2) sha256=8efde647e278417e8074421b007e0d7d7c591482ef99d980528b18fea015a7c8
-  rubocop-ast (1.44.1) sha256=e3cc04203b2ef04f6d6cf5f85fe6d643f442b18cc3b23e3ada0ce5b6521b8e92
+  rubocop-ast (1.51.0) sha256=0ec311e36b191b3872d909078a35274e962ae97dbce64be6812d145ca59acfcb
   rubocop-capybara (2.22.1) sha256=ced88caef23efea53f46e098ff352f8fc1068c649606ca75cb74650970f51c0c
   rubocop-disable_syntax (0.1.1) sha256=fba0b24edbd3de049ccaac8473c18fed308b5bd991e389a3368965f6cb88edbb
   rubocop-performance (1.25.0) sha256=6f7d03568a770054117a78d0a8e191cefeffb703b382871ca7743831b1a52ec1
