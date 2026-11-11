@@ -372,7 +372,7 @@ GEM
       addressable
       css_parser (>= 1.19.0)
       htmlentities (>= 4.0.0)
-    prettyprint (0.2.0)
+    prettyprint (0.2.1)
     prism (1.4.0)
     pry (0.15.2)
       coderay (~> 1.1)
@@ -883,7 +883,7 @@ CHECKSUMS
   pjax_rails (0.5.1) sha256=3cb4b53d874de1349014aaae2cb879c8924ec86d68f3054a0d958c995b0c8ddb
   pp (0.6.2) sha256=947ec3120c6f92195f8ee8aa25a7b2c5297bb106d83b41baa02983686577b6ff
   premailer (1.27.0) sha256=0fe2348cd82738855c482b31c915a06ecb1d3ad004578c19042905196ddbd1e7
-  prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
+  prettyprint (0.2.1) sha256=d555d57ea6d7cf001d4774b693546a6bd88bec1e778ddffb5c60b68ceec4b7d4
   prism (1.4.0) sha256=dc0e3e00e93160213dc2a65519d9002a4a1e7b962db57d444cf1a71565bb703e
   pry (0.15.2) sha256=12d54b8640d3fa29c9211dd4ffb08f3fd8bf7a4fd9b5a73ce5b59c8709385b6b
   pry (0.15.2-java) sha256=855f3b57563bacac46d49f58ecc9650a3d7f798dffafbdf392ff1b26a3fa180c
