@@ -216,8 +216,8 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    io-console (0.8.0)
-    io-console (0.8.0-java)
+    io-console (0.9.5)
+    io-console (0.9.5-java)
     irb (1.15.2)
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
@@ -813,8 +813,8 @@ CHECKSUMS
   http-cookie (1.0.8) sha256=b14fe0445cf24bf9ae098633e9b8d42e4c07c3c1f700672b09fbfe32ffd41aa6
   httparty (0.23.1) sha256=3ac1dd62f2010f6ece551716f5ceec2b2012011d89f1751917ab7f724e966b55
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
-  io-console (0.8.0) sha256=cd6a9facbc69871d69b2cb8b926fc6ea7ef06f06e505e81a64f14a470fddefa2
-  io-console (0.8.0-java) sha256=3cc6fd5c66e587145c1fdf8dc40c2e3d851e90722a5d0cc3f38da352f06fe1bd
+  io-console (0.9.5) sha256=83dd9bbf4c4680416629245b39cd4212eb5f4d9a4ea91804870c1f6b846414d5
+  io-console (0.9.5-java) sha256=34b74ec7d8e39a526fb9a82aa34853257a1baa08f56c5cd5d37ec6be2a5e6000
   irb (1.15.2) sha256=222f32952e278da34b58ffe45e8634bf4afc2dc7aa9da23fed67e581aa50fdba
   jar-dependencies (0.5.5) sha256=2972b9fcba4b014e6446a84b5c09674a3e8648b95b71768e729f0e8e40568059
   jquery-rails (4.6.0) sha256=3c4e6bf47274340b44d836b8aa1b5472c6d451e2739af5ec094421f39025a7e2
