@@ -96,7 +96,7 @@ GEM
       multi_json
     ast (2.4.3)
     attr_extras (7.1.0)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bcrypt (3.1.20)
     bcrypt (3.1.20-java)
     benchmark (0.4.0)
@@ -543,7 +543,7 @@ GEM
     ruby2_keywords (0.0.5)
     ruby_engine (2.0.3)
     ruby_version (1.0.3)
-    rubyzip (2.4.1)
+    rubyzip (3.7.0)
     rushover (0.3.0)
       json
       rest-client
@@ -551,11 +551,10 @@ GEM
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
     securerandom (0.4.1)
-    selenium-webdriver (4.31.0)
+    selenium-webdriver (4.52.0)
       base64 (~> 0.2)
       logger (~> 1.4)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
+      rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
     simplecov (0.22.0)
       docile (~> 1.1)
@@ -747,7 +746,7 @@ CHECKSUMS
   airbrake (4.3.8) sha256=d06947194f5dcd7e192c28067f2c47728511d75326c17045094c3a0b84f68c2d
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
   attr_extras (7.1.0) sha256=d96fc9a9dd5d85ba2d37762440a816f840093959ae26bb90da994c2d9f1fc827
-  base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
+  base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bcrypt (3.1.20) sha256=8410f8c7b3ed54a3c00cd2456bf13917d695117f033218e2483b2e40b0784099
   bcrypt (3.1.20-java) sha256=8236dff31f6f36cffe334939e4ea59c41e1c94e2e246c01783575fa6df40373f
   benchmark (0.4.0) sha256=0f12f8c495545e3710c3e4f0480f63f06b4c842cc94cec7f33a956f5180e874a
@@ -940,11 +939,11 @@ CHECKSUMS
   ruby2_keywords (0.0.5) sha256=ffd13740c573b7301cf7a2e61fc857b2a8e3d3aff32545d6f8300d8bae10e3ef
   ruby_engine (2.0.3) sha256=ca2ae7def8cfcdc2bfb6a186d36d5d59c8b403245dc0256c3802b767fa278aaa
   ruby_version (1.0.3) sha256=5930f9950746b7e6c973184398ee364ee7440b170fef7922b9f5cdf317f1ccb5
-  rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
+  rubyzip (3.7.0) sha256=65c19294da75297a939006f3516deacc33185fbd721ff1954f7a231db6d3e121
   rushover (0.3.0) sha256=8490d0f8fc0421d774122ac0f299bb4c1dc3bf482cd759df5ed635965b30dd48
   sawyer (0.9.2) sha256=fa3a72d62a4525517b18857ddb78926aab3424de0129be6772a8e2ba240e7aca
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
-  selenium-webdriver (4.31.0) sha256=ddb2d88eee23cddb5d6a9dadd909427a9e5163718338e11a91eef2fbead100e9
+  selenium-webdriver (4.52.0) sha256=5d45ba100ea8b57f5a8c25979a636d48b4c60c39973478930d78e884bdeecd2d
   simplecov (0.22.0) sha256=fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5
   simplecov-html (0.13.1) sha256=5dab0b7ee612e60e9887ad57693832fdf4695b4c0c859eaea5f95c18791ef10b
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
