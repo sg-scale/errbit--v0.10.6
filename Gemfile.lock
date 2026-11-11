@@ -89,8 +89,8 @@ GEM
       minitest (>= 5.1)
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.9.2)
+      public_suffix (>= 2.0.2, < 8.0)
     airbrake (4.3.8)
       builder
       multi_json
@@ -131,8 +131,10 @@ GEM
       bigdecimal
       rexml
     crass (1.0.6)
-    css_parser (1.21.1)
+    css_parser (3.4.0)
       addressable
+      base64
+      ssrf_filter (~> 1.5)
     csv (3.3.4)
     date (3.4.1)
     date (3.4.1-java)
@@ -368,10 +370,9 @@ GEM
       railties (>= 4.0)
     pp (0.6.2)
       prettyprint
-    premailer (1.27.0)
+    premailer (1.33.0)
       addressable
-      css_parser (>= 1.19.0)
-      htmlentities (>= 4.0.0)
+      css_parser (>= 3.1.0)
     prettyprint (0.2.0)
     prism (1.4.0)
     pry (0.15.2)
@@ -389,7 +390,7 @@ GEM
     psych (5.2.3-java)
       date
       jar-dependencies (>= 0.1.7)
-    public_suffix (6.0.1)
+    public_suffix (7.0.5)
     puma (6.6.0)
       nio4r (~> 2.0)
     puma (6.6.0-java)
@@ -575,6 +576,7 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
+    ssrf_filter (1.6.0)
     standard (1.49.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
@@ -743,7 +745,7 @@ CHECKSUMS
   activerecord (7.2.2.2) sha256=e6b1e1499018f1c3ffd9f7828a8560588da1f5bd85dc2b7a95e49c5467cda800
   activestorage (7.2.2.2) sha256=0b28d0c191b03162e83d3bf6875c3692ab48abd1e371bb0b428136dd8509ae66
   activesupport (7.2.2.2) sha256=c54e84bb3d9027f1f372fb8f68203538fcfe0d5ff42801774c03974daa15bef0
-  addressable (2.8.7) sha256=462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232
+  addressable (2.9.2) sha256=9117c7e7d6ee07230e75ce41fb9401ae55354dc654fcd0e862ba41d539e9a610
   airbrake (4.3.8) sha256=d06947194f5dcd7e192c28067f2c47728511d75326c17045094c3a0b84f68c2d
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
   attr_extras (7.1.0) sha256=d96fc9a9dd5d85ba2d37762440a816f840093959ae26bb90da994c2d9f1fc827
@@ -767,7 +769,7 @@ CHECKSUMS
   connection_pool (2.5.0) sha256=233b92f8d38e038c1349ccea65dd3772727d669d6d2e71f9897c8bf5cd53ebfc
   crack (1.0.0) sha256=c83aefdb428cdc7b66c7f287e488c796f055c0839e6e545fec2c7047743c4a49
   crass (1.0.6) sha256=dc516022a56e7b3b156099abc81b6d2b08ea1ed12676ac7a5657617f012bd45d
-  css_parser (1.21.1) sha256=6cfd3ffc0a97333b39d2b1b49c95397b05e0e3b684d68f77ec471ba4ec2ef7c7
+  css_parser (3.4.0) sha256=0df3355c4e53fb872dd4cb46b10969c8722a010bc0fa38deb6589cd7e0387d15
   csv (3.3.4) sha256=e96ecd5a8c3494aa5b596282249daba5c6033203c199248e6146e36d2a78d8cd
   date (3.4.1) sha256=bf268e14ef7158009bfeaec40b5fa3c7271906e88b196d958a89d4b408abe64f
   date (3.4.1-java) sha256=74740d914c65a922a15657c25ff0e203c16f1d0f7aa910a9ebed712afe9819c4
@@ -882,7 +884,7 @@ CHECKSUMS
   patience_diff (1.2.0) sha256=f492094486af02fff4a80070fa6b4d0ebbcf4d42fb38bba29d095eef43f6822c
   pjax_rails (0.5.1) sha256=3cb4b53d874de1349014aaae2cb879c8924ec86d68f3054a0d958c995b0c8ddb
   pp (0.6.2) sha256=947ec3120c6f92195f8ee8aa25a7b2c5297bb106d83b41baa02983686577b6ff
-  premailer (1.27.0) sha256=0fe2348cd82738855c482b31c915a06ecb1d3ad004578c19042905196ddbd1e7
+  premailer (1.33.0) sha256=1a0c6320fc482e97fd1ce05f0f25d96e1dc766520ea64db9e7637efd0c510daa
   prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
   prism (1.4.0) sha256=dc0e3e00e93160213dc2a65519d9002a4a1e7b962db57d444cf1a71565bb703e
   pry (0.15.2) sha256=12d54b8640d3fa29c9211dd4ffb08f3fd8bf7a4fd9b5a73ce5b59c8709385b6b
@@ -890,7 +892,7 @@ CHECKSUMS
   pry-rails (0.3.11) sha256=a69e28e24a34d75d1f60bcf241192a54253f8f7ef8a62cba1e75750a9653593d
   psych (5.2.3) sha256=84a54bb952d14604fea22d99938348814678782f58b12648fcdfa4d2fce859ee
   psych (5.2.3-java) sha256=3e5425b9e8a2f41cc2707d5ef14fdc1ae908abbafb12fe45727bd63900056585
-  public_suffix (6.0.1) sha256=61d44e1cab5cbbbe5b31068481cf16976dd0dc1b6b07bd95617ef8c5e3e00c6f
+  public_suffix (7.0.5) sha256=1a8bb08f1bbea19228d3bed6e5ed908d1cb4f7c2726d18bd9cadf60bc676f623
   puma (6.6.0) sha256=f25c06873eb3d5de5f0a4ebc783acc81a4ccfe580c760cfe323497798018ad87
   puma (6.6.0-java) sha256=707623ea7a5e4cfb8badb60f192fed6ae66d8c25d28737ebc684437d6fda08ce
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
@@ -952,6 +954,7 @@ CHECKSUMS
   spoon (0.0.6) sha256=3ad18e28f6d36f7379c3085b2e96b6160f1ef55397ca1ed0d39b26fc5bbab3f4
   sprockets (4.2.1) sha256=951b13dd2f2fcae840a7184722689a803e0ff9d2702d902bd844b196da773f97
   sprockets-rails (3.5.2) sha256=a9e88e6ce9f8c912d349aa5401509165ec42326baf9e942a85de4b76dbc4119e
+  ssrf_filter (1.6.0) sha256=78d15bc26d0385c931f46f12a9c1cbb90e6556bd96b95f25e5a5f786c8dcf999
   standard (1.49.0) sha256=590cd11a2021350812483cb53fc185bd8a92ca215839145d71fdd693750bb470
   standard-custom (1.0.2) sha256=424adc84179a074f1a2a309bb9cf7cd6bfdb2b6541f20c6bf9436c0ba22a652b
   standard-performance (1.8.0) sha256=ed17b7d0e061b2a19a91dd434bef629439e2f32310f22f26acb451addc92b788
