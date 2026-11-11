@@ -286,8 +286,8 @@ GEM
     mongoid-rspec (4.2.0)
       mongoid (>= 3.0, < 10.0)
       mongoid-compatibility (>= 0.5.1)
-    msgpack (1.8.0)
-    msgpack (1.8.0-java)
+    msgpack (1.8.7)
+    msgpack (1.8.7-java)
     multi_json (1.15.0)
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
@@ -845,8 +845,8 @@ CHECKSUMS
   mongoid (9.0.6) sha256=2d8d23e0afd81e5b4899c034d90a301f41cac832afa80a7aa09281c119908d19
   mongoid-compatibility (1.0.0) sha256=08e5770d102258a3b8f39443057de42cde61d465980f182954b1b70d965465e8
   mongoid-rspec (4.2.0) sha256=0811fccdc6dcca21987486208a0f614cc395620ccb7ce884b9bce0b5a677ecc8
-  msgpack (1.8.0) sha256=e64ce0212000d016809f5048b48eb3a65ffb169db22238fb4b72472fecb2d732
-  msgpack (1.8.0-java) sha256=723cdf579b089a68dfd9fd7228fc0caed07865d26fc7224e5381af1fb3292f8a
+  msgpack (1.8.7) sha256=dfefec761b5f9047e6e8d95d2c7f8af4b3725d984a01942adc533aa819a2df33
+  msgpack (1.8.7-java) sha256=729c29fbf09eb667e34f7df2478fa3b4ffba0f18f3ea4b628c1cfdd43fe3a2ac
   multi_json (1.15.0) sha256=1fd04138b6e4a90017e8d1b804c039031399866ff3fbabb7822aea367c78615d
   multi_xml (0.7.1) sha256=4fce100c68af588ff91b8ba90a0bb3f0466f06c909f21a32f4962059140ba61b
   net-http (0.6.0) sha256=9621b20c137898af9d890556848c93603716cab516dc2c89b01a38b894e259fb
